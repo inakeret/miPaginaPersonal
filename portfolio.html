@@ -5,47 +5,121 @@
     <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <div class="wrap">
-            <h1>Titulo</h1>
-            <p> minitexto</p>
-            <nav class="redirecciones">
-                <a href="index.html">Inicio</a>
-                <a href="biografia.html">Biografia</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+
+        <div class="logo">
+            <p class="titulo-encabezado">Orangea</p>
+            <p>La elegancia del sabor natural</p>
         </div>
+        
+        <nav class="redirecciones">
+            <ul>
+                <li><a href="index.html" class="btn">Inicio</a></li>
+                <li><a href="biografia.html" class="btn">Biografia</a></li>
+                <li><a href="contacto.html" class="btn">Contacto</a></li>
+            </ul>
+
+        </nav>
+
     </header>
 
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I love building responsive and user-friendly websites.</p>
+        <section class="portfolio-preview">
+            <h2>Portfolio</h2>
+            <div class="grid-container portfolio-grid">
+                <article>
+                    <a href="#valencia">
+                        <div><img src="img/valencia-ciudad.jpg" alt="Produccion en Valencia nuestro mayor proveedor"></div>
+                        <h3>Plantación en Valencia</h3>
+                    </a>
+
+                </article>
+                <article>
+                    <a href="#transporte">
+                        <div><img src="img/camion.jpg" alt="Transportar una parte de la produccion a otros continentes"></div>
+                        
+                        <h3>Transportar nuestra producción</h3>
+                    </a>
+
+                </article>
+                <article>
+                    <a href="#zumo">
+                        <div><img src="img/naranjas.jpg" alt="Zumo de naranja natural"></div>
+                        <h3>Nuestro nuevo producto: Zumo de naranja <span class="negrita">natural</span> </h3>
+                    </a>
+
+                </article>
+            </div>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Project One</strong> - A responsive website for a local business.
-                </li>
-                <li>
-                    <strong>Project Two</strong> - A personal blog built with HTML and CSS.
-                </li>
-                <li>
-                    <strong>Project Three</strong> - An interactive portfolio using JavaScript.
-                </li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-        </section>
+
+        <article class = "portfolio-article escondido" id = "valencia">
+            <div  >
+                <h3>Plantación en Valencia</h3>
+                <p>En <span class="negrita">Orangea</span>, creemos que la calidad empieza en la tierra. Por eso cultivamos nuestras naranjas en <span class="negrita">Valencia</span>, una de las regiones más privilegiadas del mundo para el cultivo de cítricos. Desde hace siglos, los campos valencianos han sido sinónimo de <span class="negrita">frescura, sabor y tradición agrícola</span>, y hoy seguimos cuidando ese legado con pasión y respeto.</p>
+
+                <p>El <span class="negrita">clima mediterráneo</span> de Valencia es perfecto para el desarrollo del naranjo: los <span class="negrita">inviernos suaves</span>, los <span class="negrita">veranos cálidos y soleados</span> y la <span class="negrita">influencia constante del mar</span> crean un microclima único. La <span class="negrita">brisa marina</span> mantiene la humedad necesaria, mientras que los <span class="negrita">suelos fértiles, ricos en minerales y con un excelente drenaje</span>, permiten que las raíces crezcan fuertes y que cada fruto madure lentamente, alcanzando su punto óptimo de dulzura y jugosidad.</p>
+
+                <div class="video-container">
+                    <video src="video/videonaranjas.mp4" controls poster="img/poster-naranjas.png">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+
+                <p>En nuestras plantaciones, combinamos la <span class="negrita">sabiduría de la tradición agrícola valenciana</span> con técnicas modernas y sostenibles. Respetamos los ritmos naturales del campo, evitando productos químicos innecesarios y fomentando la <span class="negrita">biodiversidad</span>. Cada naranja se recoge <span class="negrita">a mano y en su momento justo</span>, garantizando un sabor auténtico y una frescura que se nota desde el primer gajo.</p>
+
+                <p>Para nosotros, cada naranja es mucho más que una fruta: es el resultado de un entorno privilegiado, de una cultura agrícola centenaria y del esfuerzo diario de quienes aman la tierra. Por eso, cuando eliges <span class="negrita">Orangea</span>, eliges <span class="negrita">la esencia del Mediterráneo</span>, el sabor del sol y la calidad que solo puede nacer en <span class="negrita">Valencia</span>, el mejor lugar del mundo para cultivar naranjas.</p>
+            </div>
+        </article>
+
+        <article class = "portfolio-article escondido" id ="transporte">
+            <div>
+                <h3>Transportar nuestra producción</h3>
+                <p>En <span class="negrita">Orangea</span>, sabemos que cada hora cuenta. Por eso, el transporte de nuestras naranjas es una auténtica <span class="negrita">contrarreloj</span> en la que cuidamos cada detalle para que el producto llegue a su destino con la <span class="negrita">máxima frescura y calidad</span>. Desde el momento en que se recolectan, nuestras naranjas comienzan un viaje cuidadosamente planificado que les permite conservar todo su sabor natural y su aroma inconfundible.</p>
+
+                <p>Coordinamos una red logística eficiente y rápida que conecta directamente nuestras plantaciones en <span class="negrita">Valencia</span> con diferentes países de Europa. El objetivo es claro: que nuestras naranjas lleguen a cada hogar en el menor tiempo posible, manteniendo intactas sus propiedades y su frescura, como si acabaran de ser recogidas del árbol.</p>
+
+                <p>Además, en <span class="negrita">Orangea</span> apostamos por la <span class="negrita">sostenibilidad</span> en cada etapa del proceso. No utilizamos envoltorios de plástico, porque creemos que la calidad no necesita ocultarse detrás de materiales artificiales. En su lugar, empleamos <span class="negrita">cajas de cartón reciclado</span>, resistentes y respetuosas con el medio ambiente, que protegen cada fruta durante el transporte sin generar residuos innecesarios.</p>
+
+                <p>De esta forma, unimos lo mejor de la tradición valenciana con un compromiso moderno: <span class="negrita">ofrecer naranjas frescas, sostenibles y responsables</span> que viajan desde nuestros campos hasta tu mesa con el mismo cuidado con el que fueron cultivadas.</p>
+            </div>
+        </article>
+
+        <article class = "portfolio-article escondido" id ="zumo">
+            <div>
+                <h3>Nuestro nuevo producto: Zumo de naranja natural</h3>
+
+                <p>En <span class="negrita">Orangea</span>, seguimos creciendo sin perder nuestra esencia. Fruto de nuestra pasión por las naranjas y el deseo de aprovechar al máximo cada cosecha, nace nuestra nueva línea de producción: <span class="negrita">zumo natural de naranja 100% valenciano</span>.</p>
+
+                <p>El proceso comienza en nuestros campos de <span class="negrita">Valencia</span>, donde seleccionamos las naranjas más jugosas y maduras. Estas se exprimen en el mismo entorno de producción, garantizando un zumo fresco, lleno de vitaminas y con el auténtico sabor del Mediterráneo. No añadimos azúcares, conservantes ni colorantes: solo el zumo puro de nuestras naranjas recién recolectadas.</p>
+
+                <div class = "audio-container">
+                    <p>Escucha nuestra nueva canción:</p>
+                    <audio src="audio/audio_zumo.m4a" controls>
+                        Tu navegador no soporta la reproducción de audio.
+                    </audio>
+                </div>                
+
+                <p>Con esta nueva rama, queremos acercar la <span class="negrita">experiencia Orangea</span> a quienes buscan disfrutar de la fruta de una forma práctica y saludable. Nuestro objetivo es ofrecer un producto que mantenga toda la calidad y el compromiso con el medio ambiente que caracteriza a nuestra marca.</p>
+
+                <p>Por eso, en lugar de utilizar envases plásticos, optamos por <span class="negrita">botellas de vidrio y materiales reciclables</span>, reduciendo al mínimo el impacto ambiental. Cada botella refleja nuestro respeto por la naturaleza y nuestro deseo de construir un futuro más sostenible, sin renunciar al sabor auténtico de una naranja recién exprimida.</p>
+
+                <p>Con <span class="negrita">Orangea Zumo</span>, llevamos la frescura de nuestros campos directamente a tu mesa, para que disfrutes cada día de un zumo natural, responsable y lleno de vida.</p>
+            </div>
+        </article>
+
     </main>
     <footer>
-        &copy; 2024 My Portfolio
+        <p>© 2025 Mi Página | Todos los derechos reservados</p>
     </footer>
 </body>
 </html>

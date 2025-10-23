@@ -5,55 +5,71 @@
     <title>My HTML Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="wrap">
-            <h1>Titulo</h1>
-            <p> minitexto</p>
-            <!-- <nav class="redirecciones">
-                <a href="biografia.html">Biografia</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contacto.html">Contacto</a>
-            </nav> -->
+        <div class="logo">
+            <p class="titulo-encabezado">Orangea</p>
+            <p> La elegancia del sabor natural</p>
+
         </div>
+
+        <nav class="redirecciones">
+            <ul>
+                <li><a href="portfolio.html" class="btn">Portfolio</a></li>
+                <li><a href="biografia.html" class="btn">Biografia</a></li>
+                <li><a href="contacto.html" class="btn">Contacto</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <section class="portfolio-preview">
         <h2>Portfolio</h2>
-        <div class="grid">
-        <article>
-            <img src="img/proyecto1.jpg" alt="Proyecto 1">
-            <h3>Proyecto 1</h3>
-        </article>
-        <article>
-            <img src="img/proyecto2.jpg" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-        </article>
-        <article>
-            <img src="img/proyecto3.jpg" alt="Proyecto 3">
-            <h3>Proyecto 3</h3>
-        </article>
+        <div class="grid-container">
+            <article>
+                <a href="portfolio.html"><img src="img/valencia-ciudad.jpg" alt="Produccion en Valencia nuestro mayor proveedor"></a>
+                <h3>Plantación en Valencia</h3>
+            </article>
+            <article>
+                <a href="portfolio.html"><img src="img/camion.jpg" alt="Transportar una parte de la produccion a otros continentes"></a>
+                
+                <h3>Transportar a otros paises nuestra producción</h3>
+            </article>
+            <article>
+                <a href="portfolio.html">
+                <img src="img/naranjas.jpg" alt="Zumo de naranja natural"></a>
+
+                <h3>Nuestro nuevo producto</h3>
+            </article>
         </div>
-        <a href="portfolio.html" class="btn">Ver más proyectos</a>
+        <a href="portfolio.html" class="btn">Ver portfolio</a>
     </section>
 
     <section class="about">
-        <img src="img/foto-perfil.jpg" alt="Mi foto" />
-        <h2>Sobre mí</h2>
-        <p>Aquí puedes poner un pequeño texto presentándote, con tu foto al lado.</p>
-        <a href="biografia.html" class="btn">Ver mi trallectoria</a>
+        <h2>Sobre Nosotros</h2>
+        <div>
+            <img src="img/perfil.jpg" alt="foto del fundador de Orangea" />
+        
+        </div>
+        <p>
+            Todo comenzó con el sueño de un agricultor apasionado por el campo y el sabor auténtico de las naranjas. Cansado de ver cómo se perdía la esencia de lo natural, decidió crear Orangea, una empresa que apuesta por la frescura, la sostenibilidad y el trato directo con el cliente. Desde nuestros huertos hasta tu mesa, cuidamos cada detalle para ofrecerte naranjas de calidad, recogidas a mano y llenas del sabor del sol mediterráneo
+        </p>
+        
+        <a href="biografia.html" class="btn">Sobre nosotros</a>
     </section>
 
-    <!-- <section class="hero">
-        <h2>Welcome to My Page</h2>
-        <p>Una breve frase llamativa que resuma quién eres o qué haces.</p>
-       
-    </section> -->
 
-    <section class="contact">
+    <section class ="contact">
         <h2>Contacto</h2>
-        <p>¿Quieres hablar conmigo? Escríbeme <a href="contacto.html">aquí</a>.</p>
+        <p>¿Quieres hablar con nosotros?</p>
+        <a href="contacto.html" class="btn">Escríbenos aquí</a>
     </section>
 
 
